@@ -5,7 +5,7 @@ var session = require("express-session");
 var fs = require("fs");
 
 app.set('views', __dirname + '/views');
-app.set('views engine', 'ejs');
+app.set('view engine', 'ejs');
 app.engine('html', require("ejs").renderFile);
 
 var server = app.listen(process.env.PORT, function() {
